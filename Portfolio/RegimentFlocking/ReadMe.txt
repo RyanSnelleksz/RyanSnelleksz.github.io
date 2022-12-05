@@ -2,7 +2,6 @@ This is a regiment/flocking AI by Ryan Snelleksz.
 
 
 
-
 Demo Controls:
 
 Scroll with the mouse to zoom in and out.
@@ -28,7 +27,7 @@ The armies also have stances in which they can take. These include, Hold, Attack
 
 When holding armies will stay still, however if another enemy army is in range and in line of sight, they will turn to face that army.
 If set to attack, the army will pursue any army they can see.
-If set to move, the army will move to whatever location they where told to move to anf then will hold.
+If set to move, the army will move to whatever location they where told to move to and then will hold.
 Armies who have lost too many units will take the flee stance and will break formation, and each unit will run directly away from the enemy army.
 
 The army clone AI will provide positions for the soldiers by calculating using the current amount of soldiers remaining and the set values for spacing and the soldiers then seek out those positions.

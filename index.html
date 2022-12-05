@@ -69,6 +69,44 @@ Later in the project this evolved to a smaller fov which would grow everytime th
 
 <h1 id="ProjectNameHeader">Regiment AI</h1>
 
+<p id="ProjectText">The goal of this project was to make a library project in which someone could feed relevant information to the 'War Manager' and it would feed new positions
+back.<br>
+This was made using my own physics engine and a Line Renderer I was given during an old product. I did not make the line renderer and I used the glm and
+GLFW libraries as well but the rest is my own. Imgui is also present but it was not used.</p>
+
+<p id="ProjectText">This was made by implementing Dikstra pathfinding and a grid based node map. The way the AI works is that you set it up by creating 'Clone Armies' that have
+'Clones'. This represent the data of the armies and units inside the armies of the program that is using the library.
+It also has a war manager which essentially is a black board with some additional function.</p>
+
+<p id="ProjectText">The armies also have stances in which they can take. These include, Hold, Attack, Move and Flee.</p>
+
+<p id="ProjectText">When holding armies will stay still, however if another enemy army is in range and in line of sight, they will turn to face that army.
+If set to attack, the army will pursue any army they can see.<br>
+If set to move, the army will move to whatever location they where told to move to and then will hold.<br>
+Armies who have lost too many units will take the flee stance and will break formation, and each unit will run directly away from the enemy army.</p>
+
+<p id="ProjectText">The army clone AI will provide positions for the soldiers by calculating using the current amount of soldiers remaining and the set values for spacing and the soldiers then seek out those positions.</p>
+
+<center><img src="WebsiteImages/Regiment.png" alt="Regiment AI." id="MonsterCorridor"></center>
+
+<h1 id="ProjectNameHeader">Quardrapedal Character Controller</h1>
+
+<p id="ProjectText">My goal for this project was to make a quadrapedal character controller that felt good and looked realistic. Since I was making a quardrapedal CC
+I decided to do it in Unity so I could do it easily in 3D.
+</p>
+
+<p id="ProjectText">When initially tackling this project I sought to make it so that the player controller the front of the body, and the back of the body would follow.
+This worked well at the start but when trying to apply it to a character model, I found that my setup didn't really work and so I decided to take what I learned and
+try again from a different approach.</p>
+
+<p id="ProjectText">
+I started by laying the ground work like basic movement and I made so to start development on a character model already. I then tried to make the movement mimic the movement of a quadraped more and looked at some videos of horses and dogs for reference.<br>
+Eventually I got it feeling good but then I needed to make it look good. Eventually after getting some third opinions I landed on using animation masks to cut up animations. By doing this I made it so the user could stop mid turn and stay turned. Walking forward would then straighten out the character and while also moving you a little in the direction you were already facing.</p>
+
+<center><img src="WebsiteImages/Fox.png" alt="Fox." id="MonsterCorridor"></center>
+
+<p id="ProjectText">This project was interesting to work on because it was a new kind of challenge where instead of the projects I was more used to where you make a program to do something over quite a-bit of code, I was making something that wasn't that much code, but I had to make it the best quality I could.</p>
+
 </div>
 
 </body>
