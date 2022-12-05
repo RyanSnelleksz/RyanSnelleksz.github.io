@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<link rel="Stylesheet" href="index.css" type="text/css">
+<link rel="Stylesheet" href="index.css" type="text/css" />
 <title>Ryan Snelleksz Portfolio</title>
 <meta charset="utf-8">
 
@@ -13,6 +13,29 @@
 <div id="PageTopDiv">
 <h1 id="PageHeading">Ryan Snelleksz - Portfolio</h1>
 <h2 id="LinkHeading"><a href="https://github.com/RyanSnelleksz/RyanSnelleksz.github.io" id="PageLink" target="_blank">My GitHub</a></h1>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("PageHeading").style.fontSize = "30px";
+	document.getElementById("PageHeading").style.padding-top = "20px";
+	
+	document.getElementById("LinkHeading").style.fontSize = "15px";
+	
+	document.getElementById("PageTopDiv").style.height = "100px";
+  } else {
+    document.getElementById("PageHeading").style.fontSize = "90px";
+	document.getElementById("PageHeading").style.padding-top = "0px";
+	
+	document.getElementById("LinkHeading").style.fontSize = "45px";
+	
+	document.getElementById("PageTopDiv").style.height = "500px";
+  }
+}
+</script>
+
 </div>
 
 <div id="PageContent">

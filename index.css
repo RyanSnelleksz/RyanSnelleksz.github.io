@@ -12,14 +12,17 @@ a:hover {
 #PageTopDiv {
 	background-color: #2C2C2C;
 	height: 400px;
-	margin-top: -35px;
+	width: 100%;
+	position: fixed;
+	transition: 0.2s;
+	top: 0;
 }
 
 #PageHeading {
 	  text-align: center;
 	  color: #FFFFFF;
 	  font-size: 50px;
-	  padding-top: 80px;
+	  padding-top: 0px;
 }
 
 #LinkHeading {
@@ -31,7 +34,7 @@ a:hover {
 }
 
 #PageContent {
-
+	padding-top: 500px;
 }
 
 #ProjectsHeader {
