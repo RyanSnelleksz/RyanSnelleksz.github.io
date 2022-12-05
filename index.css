@@ -1,7 +1,7 @@
 html, body { 
 	margin: 0; 
 	padding:0;
-	background-image: url('WebsiteImages/Tiles.png');
+	background-image: url('WebsiteImages/GreyBackground.png');
 	cursor: url('WebsiteImages/Cursor.png'), auto;
 }
 
@@ -55,4 +55,9 @@ a:hover {
 #MonsterCorridor {
 	Height: 50%;
 	Width: 50%;
+	transition: transform .2s;
+}
+
+#MonsterCorridor:Hover {
+	transform: scale(1.5);
 }
