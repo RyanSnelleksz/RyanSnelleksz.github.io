@@ -42,5 +42,5 @@ So I went with a third idea of guessing the closest adjacent room to the last ro
 I found that the rooms that made the monster need to turn the least was often the best guess that would make the monster either guess the right room or move past 
 the players hiding spot which would increase tension, and simply make least optimal choices less often.
 
-So I ended up with a solution where the monster would take a guess from the rooms whose paths too started in front of th emonster from a smaller field of view.
+So I ended up with a solution where the monster would take a guess from the rooms whose paths too started in front of the monster from a smaller field of view.
 Later in the project this evolved to a smaller fov which would grow everytime the previous fov didn't produce good results.
