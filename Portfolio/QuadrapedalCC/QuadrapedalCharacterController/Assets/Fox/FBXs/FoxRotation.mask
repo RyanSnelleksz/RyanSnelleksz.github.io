@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FoxRotation
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: fox
+    m_Weight: 1
+  - m_Path: FoxTransform
+    m_Weight: 1
+  - m_Path: FoxTransform/Fox_Pelvis
+    m_Weight: 1
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_LLeg1
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_LLeg1/Fox_LLeg2
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_LLeg1/Fox_LLeg2/Fox_LLegAnkle
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_LLeg1/Fox_LLeg2/Fox_LLegAnkle/Fox_LLegDigit11
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_RLeg1
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_RLeg1/Fox_RLeg2
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_RLeg1/Fox_RLeg2/Fox_RLegAnkle
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_RLeg1/Fox_RLeg2/Fox_RLegAnkle/Fox_RLegDigit11
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1
+    m_Weight: 1
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2
+    m_Weight: 1
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage
+    m_Weight: 1
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_F_LLeg1
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_F_LLeg1/Fox_F_LLeg2
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_F_LLeg1/Fox_F_LLeg2/Fox_F_LLegAnkle
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_F_LLeg1/Fox_F_LLeg2/Fox_F_LLegAnkle/Fox_F_LLegDigit11
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_F_RLeg1
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_F_RLeg1/Fox_F_RLeg2
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_F_RLeg1/Fox_F_RLeg2/Fox_F_RLegAnkle
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_F_RLeg1/Fox_F_RLeg2/Fox_F_RLegAnkle/Fox_F_RLegDigit11
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine
+    m_Weight: 1
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head
+    m_Weight: 1
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_Jaw
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_LEar1
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_LEar1/Fox_LEar2
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_LEye
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_LowerLEyelid
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_LowerREyelid
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_REar1
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_REar1/Fox_REar2
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_REye
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_UpperLEyelid
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Spine1/Fox_Spine2/Fox_Ribcage/Fox_Spine/Fox_Head/Fox_UpperREyelid
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Tail1
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Tail1/Fox_Tail2
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Tail1/Fox_Tail2/Fox_Tail3
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Tail1/Fox_Tail2/Fox_Tail3/Fox_Tail4
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Tail1/Fox_Tail2/Fox_Tail3/Fox_Tail4/Fox_Tail5
+    m_Weight: 0
+  - m_Path: FoxTransform/Fox_Pelvis/Fox_Tail1/Fox_Tail2/Fox_Tail3/Fox_Tail4/Fox_Tail5/Fox_Tail6
+    m_Weight: 0
