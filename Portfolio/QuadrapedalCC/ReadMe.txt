@@ -1,6 +1,6 @@
 Build Controls:
 
-Movement: wasd / arow keys
+Movement: wasd / arrow keys
 Jump: Space
 
 My goal for this project was to make a quadrapedal character controller that felt good and looked realistic. Since I was making a quardrapedal CC
