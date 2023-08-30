@@ -35,6 +35,9 @@ a:hover {
 
 #PageContent {
 	padding-top: 500px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 200px;
 }
 
 #ProjectsHeader {
