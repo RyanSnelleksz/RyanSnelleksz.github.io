@@ -12,7 +12,7 @@
 
 <div id="PageTopDiv">
 <h1 id="PageHeading">Ryan Snelleksz - Portfolio</h1>
-<h2 id="LinkHeading"><a href="https://github.com/RyanSnelleksz/RyanSnelleksz.github.io" id="PageLink" target="_blank">My GitHub</a></h1>
+<h2 id="LinkHeading"><a href="https://github.com/RyanSnelleksz/RyanSnelleksz.github.io" id="PageLink" target="_blank">My GitHub</a> - <a href="https://www.linkedin.com/in/ryan-snelleksz-125958259/" id="PageLink" target="_blank">My Linked In</a></h1>
 
 <script>
 window.onscroll = function() {scrollFunction()};
@@ -37,7 +37,13 @@ function scrollFunction() {
 </div>
 
 <div id="PageContent">
+
+<p id="Dark Acropolis Anchor"></p>
+
 <h1 id="ProjectsHeader">Projects</h1>
+
+<p id="ProjectAnchors"><a href="#Dark Acropolis Anchor" id="ProjectAnchors" target="_blank"> Dark Acropolis </a> - <a href="#Regiment AI Anchor" id="ProjectAnchors" target="_blank"> Regiment AI </a> - <a href="#QCC Anchor" id="ProjectAnchors" target="_blank"> Quadrapedal Character Controller </a></p>
+
 <h1 id="ProjectNameHeader">Dark Acropolis</h1>
 
 <p id="ProjectText">Dark Acropolis is a first person thriller game where you must explore a castle whilst evading a monster. In order to win you have to find and destroy all the 'seals'
@@ -76,6 +82,8 @@ My first idea was to have the monster guess off the adjacent rooms to the room t
 My second idea was to guess the room that was closest to the monster by navmesh path length(excluding the monsters last room), however I knew that this solution was very simple solution and when theorising in my notes I foresaw that there could be issues with this.
 </p>
 
+<p id="Regiment AI Anchor"></p>
+
 <p id="ProjectText">From here I decided to implement the easier solution and if that wasn't good enough I can try the other and if it was good, I could improve it later.
 I went through both solutions and both seemed to be about as good as the other with the first idea still needing some better situation solutions.
 So I went with a third idea of guessing the closest adjacent room to the last room that didn't backtrack through the last room, but when testing the idea in my notes
@@ -85,7 +93,7 @@ the players hiding spot which would increase tension, and simply make least opti
 <p id="ProjectText">So I ended up with a solution where the monster would take a guess from the rooms whose paths too started in front of the monster from a smaller field of view.
 Later in the project this evolved to a smaller fov which would grow everytime the previous fov didn't produce good results.</p>
 
-<p id="ProjectText"></p>
+
 
 <h1 id="ProjectNameHeader">Regiment AI</h1>
 
@@ -107,7 +115,12 @@ Armies who have lost too many units will take the flee stance and will break for
 
 <p id="ProjectText">The army clone AI will provide positions for the soldiers by calculating using the current amount of soldiers remaining and the set values for spacing and the soldiers then seek out those positions.</p>
 
+<p id="QCC Anchor"></p>
+
 <center><img src="WebsiteImages/Regiment.png" alt="Regiment AI." id="MonsterCorridor"></center>
+
+
+
 
 <h1 id="ProjectNameHeader">Quadrupedal Character Controller</h1>
 

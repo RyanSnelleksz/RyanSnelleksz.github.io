@@ -27,6 +27,7 @@ a:hover {
 
 #LinkHeading {
 	text-align: center;
+	color: #FFFFFF;
 }
 
 #PageLink {
@@ -50,6 +51,12 @@ a:hover {
 	color: #741b47;
 	text-align: center;
 	font-size: 40px;
+}
+
+#ProjectAnchors {
+	color: #741b47;
+	text-align: center;
+	font-size: 20px;
 }
 
 #ProjectText {
