@@ -1,26 +1,9 @@
-﻿  Box.cpp
-  Camera.cpp
-  Circle.cpp
-  CollisionFunctions.cpp
-  EntryPoint.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\GLFW\glfw3.h(123): message : see previous definition of 'APIENTRY'
-  Mesh.cpp
-C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\GraphicsTest\Mesh.cpp(81,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  PhysicsHandler.cpp
-  Plane.cpp
-  Renderer.cpp
-C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\GraphicsTest\Renderer.cpp(267,20): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'float', possible loss of data
-C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\GraphicsTest\Renderer.cpp(276,20): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'float', possible loss of data
-  OBJMesh.cpp
-  RigidBody.cpp
-  ShaderProgram.cpp
-  Shape.cpp
-  Texture.cpp
-  Triangle.cpp
-  Utilities.cpp
-  Generating Code...
-  glad.c
-  LINK : C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\x64\Debug\GraphicsTest.exe not found or not built by the last incremental link; performing full link
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1087,5): error MSB6006: "link.exe" exited with code 1104.
-LINK : fatal error LNK1104: cannot open file 'assimp-vc143-mtd.lib'
+﻿zlibstaticd.lib(inflate.obj) : warning LNK4099: PDB 'zlibstatic.pdb' was not found with 'zlibstaticd.lib(inflate.obj)' or at 'C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\x64\Debug\zlibstatic.pdb'; linking object as if no debug info
+zlibstaticd.lib(crc32.obj) : warning LNK4099: PDB 'zlibstatic.pdb' was not found with 'zlibstaticd.lib(crc32.obj)' or at 'C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\x64\Debug\zlibstatic.pdb'; linking object as if no debug info
+zlibstaticd.lib(adler32.obj) : warning LNK4099: PDB 'zlibstatic.pdb' was not found with 'zlibstaticd.lib(adler32.obj)' or at 'C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\x64\Debug\zlibstatic.pdb'; linking object as if no debug info
+zlibstaticd.lib(zutil.obj) : warning LNK4099: PDB 'zlibstatic.pdb' was not found with 'zlibstaticd.lib(zutil.obj)' or at 'C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\x64\Debug\zlibstatic.pdb'; linking object as if no debug info
+zlibstaticd.lib(inftrees.obj) : warning LNK4099: PDB 'zlibstatic.pdb' was not found with 'zlibstaticd.lib(inftrees.obj)' or at 'C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\x64\Debug\zlibstatic.pdb'; linking object as if no debug info
+zlibstaticd.lib(inffast.obj) : warning LNK4099: PDB 'zlibstatic.pdb' was not found with 'zlibstaticd.lib(inffast.obj)' or at 'C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\x64\Debug\zlibstatic.pdb'; linking object as if no debug info
+     Creating library C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\x64\Debug\GraphicsTest.lib and object C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\x64\Debug\GraphicsTest.exp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  GraphicsTest.vcxproj -> C:\Users\snell\aieRepositories\WitchHuntRepo\RyanSnelleksz.github.io\Portfolio\GarphicsEngine\GraphicsEngine\x64\Debug\GraphicsTest.exe
