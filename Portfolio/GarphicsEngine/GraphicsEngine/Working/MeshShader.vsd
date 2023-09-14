@@ -1,0 +1,32 @@
+#version 450
+
+//Attributes that we expect from the vertex buffer
+layout (location = 0) in vec3 Position;
+layout (location = 1) in vec3 Colour;
+layout (location = 2) in vec3 Normal;
+layout (location = 3) in vec2 TexCoord;
+layout (location = 4) in vec4 Tangent;
+
+out vec3 _colour;
+out vec3 _normal;
+out vec3 _position;
+out vec2 _texCoord;
+out vec3 _tangent;
+out vec3 _biTangent;
+
+uniform mat4 mvp;
+uniform mat4 modelMatrix;
+
+void main()
+{
+	_position = (modelMatrix * vec4(Position, 1)).xyz;
+	_colour = Colour;
+	_normal = (modelMatrix * vec4(Normal, 0)).xyz;
+	_texCoord = TexCoord;
+	
+	_tangent = (modelMatrix * vec4(Tangent.xyz, 0)).xyz;
+	_biTangent = cross(_normal, _tangent);
+
+	gl_Position = mvp * vec4(Position, 1.0);
+	
+}
