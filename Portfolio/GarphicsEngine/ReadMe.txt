@@ -1,7 +1,6 @@
 
-This is a Graphics Engine I made using OpenGL. The folders inside the project that are not mine are GLFW, glm and AssImp.
-
-The engine using Phong Lighting for the 3D meshes and can also do 2D rendering, I've listed the functions that this engine can run at the bottom of this document.
+This is a Graphics Engine I made using OpenGL.
+The engine uses Phong Lighting for the 3D meshes and can also do 2D rendering, I've listed the functions that this engine can run at the bottom of this document.
 
 The Build/Demo consists of a 3D render of a monster on the right, a 2D diamond and two balls falling and bouncing in a box using a simple physics engine I made on the left.
 
