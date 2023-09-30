@@ -2,11 +2,11 @@ html, body {
 	margin: 0; 
 	padding:0;
 	background-image: url('WebsiteImages/GreyBackground.png');
-	cursor: url('WebsiteImages/Cursor.png'), auto;
+	//cursor: url('WebsiteImages/Cursor.png'), auto;
 }
 
 a:hover {
-	cursor: url('WebsiteImages/BlueCursor.png'), auto;
+	//cursor: url('WebsiteImages/BlueCursor.png'), auto;
 }
 
 #PageTopDiv {
