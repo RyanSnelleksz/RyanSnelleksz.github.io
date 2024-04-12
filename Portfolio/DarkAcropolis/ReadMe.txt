@@ -2,7 +2,7 @@
 IMPORTANT: I cannot upload the build of this project to github because I am using a free account, however I have provided a link below to a google drive file
 which is a build for you to check out.
 
-Build: https://drive.google.com/file/d/1uTpzeIMxuYJ6Y1wJynWIsWKZr_ZBC6O7/view?usp=drive_link
+Build: https://drive.google.com/file/d/1uTpzeIMxuYJ6Y1wJynWIsWKZr_ZBC6O7/view?usp=sharing
 
 Dark Acropolis is a first person thriller game where you must explore a castle whilst evading a monster. In order to win you have to find and destroy all the seals
 so that you can destroy the monsters heart which is also hidden in the castle. You need to stay hidden but if you are discovered, you are equipped with a gauntlet
