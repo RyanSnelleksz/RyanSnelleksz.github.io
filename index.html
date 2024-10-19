@@ -46,6 +46,11 @@ function scrollFunction() {
 
 <h1 id="ProjectNameHeader">Dark Acropolis</h1>
 
+<center><video width="640" height="480" controls>
+  <source src="WebsiteImages/WitchHDRPClip.mp4" type="video/mp4" />
+Your browser does not support the video tag for Dark Acropolis demo video.
+</video></center>
+
 <p id="ProjectText">Dark Acropolis is a first person thriller game where you must explore a castle whilst evading a monster. In order to win you have to find and destroy all the 'seals'
 so that you can destroy the monsters heart which is also hidden in the castle. It is important to stay hidden but if you are discovered, you are equipped with a magic gauntlet
 which you can use to flash and blind the monster temporarily, to get away. However, you have limited charges to your gauntlet and need to break seals to get more.</p>
@@ -79,13 +84,13 @@ It didn't have to be very accurate but it needed to be reliable, intelligent and
 
 <p id="ProjectText">In order to solve this I theorised in my note book and had two initial ideas. 
 My first idea was to have the monster guess off the adjacent rooms to the room the player or monster(depends on who and who isn't in a room as per how the monster last saw them) were last in. This sounded good but I knew that it would cause a-lot code for covering specific situations according to the monster and players positioning.<br>
-My second idea was to guess the room that was closest to the monster by navmesh path length(excluding the monsters last room), however I knew that this solution was very simple solution and when theorising in my notes I foresaw that there could be issues with this.
+My second idea was to guess the room that was closest to the monster by navmesh path length(excluding the monsters last room), however I knew that this solution was very simple and when theorising in my notes I foresaw that there could be issues with this.
 </p>
 
 <p id="Regiment AI Anchor"></p>
 
 <p id="ProjectText">From here I decided to implement the easier solution and if that wasn't good enough I can try the other and if it was good, I could improve it later.
-I went through both solutions and both seemed to be about as good as the other with the first idea still needing some better situation solutions.
+I went through both solutions and both seemed to be about as good as the other with the first idea still needing some improvements.
 So I went with a third idea of guessing the closest adjacent room to the last room that didn't backtrack through the last room, but when testing the idea in my notes
 I found that the rooms that made the monster need to turn the least was often the best guess that would make the monster either guess the right room or move past 
 the players hiding spot which would increase tension, and simply make least optimal choices less often.</p>
