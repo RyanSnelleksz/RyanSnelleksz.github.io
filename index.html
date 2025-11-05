@@ -42,7 +42,27 @@ function scrollFunction() {
 
 <h1 id="ProjectsHeader">Projects</h1>
 
-<p id="ProjectAnchors"><a href="#Dark Acropolis Anchor" id="ProjectAnchors"> Dark Acropolis </a> - <a href="#Regiment AI Anchor" id="ProjectAnchors"> Regiment AI </a> - <a href="#QCC Anchor" id="ProjectAnchors"> Quadrapedal Character Controller </a> - <a href="#OpenGL Graphics Anchor" id="ProjectAnchors"> OpenGL Graphics Engine </a> - <a href="#AOTTGTG Anchor" id="ProjectAnchors"> Attack on Titan TGTG </a></p>
+<p id="ProjectAnchors"><a href="#MetaBalls Anchor" id="ProjectAnchors"> Metaballs_Multithreaded </a> - <a href="#Dark Acropolis Anchor" id="ProjectAnchors"> Dark Acropolis </a> - <a href="#Regiment AI Anchor" id="ProjectAnchors"> Regiment AI </a> - <a href="#QCC Anchor" id="ProjectAnchors"> Quadrapedal Character Controller </a> - <a href="#OpenGL Graphics Anchor" id="ProjectAnchors"> OpenGL Graphics Engine </a> - <a href="#AOTTGTG Anchor" id="ProjectAnchors"> Attack on Titan TGTG </a></p>
+
+<h1 id="ProjectNameHeader">Metaballs - Multithreaded</h1>
+
+<center><video width="640" height="480" controls>
+  <source src="WebsiteImages/MetaballsVid.mp4" type="video/mp4" />
+Your browser does not support the video tag for Metaballs demo video.
+</video></center>
+
+<p id="ProjectText">This a c++ metaballs project I made using my openGL graphics engine. I made it as a part of a 2D water sim, 
+which will be rendered using metaballs. I very much enjoyed this project as I learned a-lot in my research for my implementation of metaballs, 
+marching squares and multi-threading.</p>
+
+<p id="ProjectText">For my implementation of meta balls, as mentioned, I had to implement a marching square algorithim.
+In my implementation, I made a class dedicated to making a grid, holding it's data and running the marching square algorithim.
+When an instance of the marching square class was made, it was instantiated using given parameters to make a series of grid points forming it's rows and columns, and then a proportionate series of cells would be made using those grid points as their corners.
+ The march function would then use those to detect which cells had points in the contour of the metashape and then use those to form a list of triangle corner positions to be drawn using the GL_TRIANGLES primitive in the graphics engine.</p>
+
+<p id="ProjectText">Optimizing my implementation was fun and I found myself making numerous improvements. I believe my best improvements came from limiting how many times the march function looped through the cells, eventually getting it to one loop. After optimizing my implementation, I sought to gain experience multi-threading since this project was a perfect opportunity. In my research, I learned a-lot about concurrency and parallelism, and although I didn't find the need for mutexs/lock guards, 
+ atomic variables and condition variables, I did get to use futures and promises in my implementation.</p>
+
 
 <h1 id="ProjectNameHeader">Dark Acropolis</h1>
 
