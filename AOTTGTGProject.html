@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="Stylesheet" href="index.css" type="text/css" />
+<title>Attack on Titan TGTG</title>
+<meta charset="utf-8">
+
+</head>
+
+<body style="background-color: #FFFFFF;">
+
+<div id="PageTopDiv">
+<h1 id="PageHeading">Attack on Titan TGTG</h1>
+<h2 id="LinkHeading"><a href="index.html" id="PageLink">Home</a></h1>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("PageHeading").style.fontSize = "30px";
+	
+	document.getElementById("LinkHeading").style.fontSize = "15px";
+	
+	document.getElementById("PageTopDiv").style.height = "100px";
+  } else {
+    document.getElementById("PageHeading").style.fontSize = "90px";
+	
+	document.getElementById("LinkHeading").style.fontSize = "45px";
+	
+	document.getElementById("PageTopDiv").style.height = "500px";
+  }
+}
+</script>
+
+</div>
+
+<div id="PageContent">
+
+<h1 id="ProjectsHeader">Projects</h1>
+
+<p id="ProjectAnchors"><a href="MetaBallProject.html" id="ProjectAnchors"> Metaballs_Multithreaded </a> | <a href="#Dark Acropolis Anchor" id="ProjectAnchors"> Dark Acropolis </a> | <a href="#Regiment AI Anchor" id="ProjectAnchors"> Regiment AI </a> | <a href="#QCC Anchor" id="ProjectAnchors"> Quadrapedal Character Controller </a> | <a href="#OpenGL Graphics Anchor" id="ProjectAnchors"> OpenGL Graphics Engine </a> | <a href="#AOTTGTG Anchor" id="ProjectAnchors"> Attack on Titan TGTG </a></p>
+
+<h1 id="ProjectNameHeader">Attack on Titan TGTG</h1>
+
+<p id="ProjectText">This project is a 'Tribute Game' for the Attack on Titan Tribute Game and is made with it as inspiration. My goal was to simulate the ODM(Omni-Directional Movement)Gear from the anime Attack on Titan similarly to the AOTTG.
+Although this was inspired by the AOTG I have strayed from some of the design choices in my own direction.
+
+</p>
+
+<p id="ProjectText">To implement the ODM gear, inside my ODMLogic script I made use of Unity's spring components, using functions and fine-tuning the settings to make them imitate ODM Gear.
+I found that this project was similar to my Quadrapedal Character Controller that was a smaller project that I needed to fine tune produce the right result.
+An example of this tuning is how I implemented Unity's physic's material to control the friction of the player so that flying around and through obstacles didn't feel 'sticky' but when sliding on the floor didn't feel frictionless.
+I used a state machine inside a player movement script to implement and control sliding, swinging, walking and the gas mechanic which can be used for extra propulsion.
+
+</p>
+
+<center><img src="WebsiteImages/AttackOnTitanTGTG.gif" alt="AttackOnTitanTGTG.gif" id="MonsterCorridor"></center>
+
+<center><img src="WebsiteImages/AOTTGTG_Image1.png" alt="AOTTGTG Image" id="MonsterCorridor"></center>
+
+<p id="ProjectText">Currently the game only has the movement mechanics and a low quality model I made, however in the future I plan to add some animation, a better map and titans(enemies) with the attack mechanics.
+</p>
+
+</div>
+
+</body>
+
+</html>

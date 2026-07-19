@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="Stylesheet" href="index.css" type="text/css" />
+<title>Ryan Snelleksz Portfolio</title>
+<meta charset="utf-8">
+
+</head>
+
+<body style="background-color: #FFFFFF;">
+
+<div id="PageTopDiv">
+<h1 id="PageHeading">Quadrapedal Character Controller</h1>
+<h2 id="LinkHeading"><a href="index.html" id="PageLink">Home</a></h1>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("PageHeading").style.fontSize = "30px";
+	
+	document.getElementById("LinkHeading").style.fontSize = "15px";
+	
+	document.getElementById("PageTopDiv").style.height = "100px";
+  } else {
+    document.getElementById("PageHeading").style.fontSize = "90px";
+	
+	document.getElementById("LinkHeading").style.fontSize = "45px";
+	
+	document.getElementById("PageTopDiv").style.height = "500px";
+  }
+}
+</script>
+
+</div>
+
+<div id="PageContent">
+
+<h1 id="ProjectsHeader">Projects</h1>
+
+<p id="ProjectAnchors"><a href="MetaBallProject.html" id="ProjectAnchors"> Metaballs_Multithreaded </a> | <a href="DarkAcropolisProject.html" id="ProjectAnchors"> Dark Acropolis </a> | <a href="RegimentProject.html" id="ProjectAnchors"> Regiment AI </a> | <a href="QCCProject.html" id="ProjectAnchors"> Quadrapedal Character Controller </a> | <a href="OpenGLGraphicsProject.html" id="ProjectAnchors"> OpenGL Graphics Engine </a> | <a href="AOTProject.html" id="ProjectAnchors"> Attack on Titan TGTG </a></p>
+
+<h1 id="ProjectNameHeader">Quadrupedal Character Controller</h1>
+
+<p id="ProjectText">My goal for this project was to make a quadrupedal character controller that felt good and looked realistic. Since I was making a quardrapedal CC
+I decided to do it in Unity so I could do it easily in 3D.
+</p>
+
+<p id="ProjectText">When initially tackling this project I sought to make it so that the player controller moved the front of the body, and the back of the body would follow.
+This worked well at the start but when trying to apply it to a character model, I found that my setup didn't really work and so I decided to take what I learned and
+try again from a different approach.</p>
+
+<p id="ProjectText">
+I started by laying the ground work like basic movement and I made so to start development on a character model already. I then tried to make the movement mimic the movement of a quadraped more and looked at some videos of horses and dogs for reference.<br>
+Eventually I got it feeling good but then I needed to make it look good. Eventually after getting some third opinions I landed on using animation masks to cut up animations. By doing this I made it so the user could stop mid turn and stay turned. Walking forward would then straighten out the character and while moving you a little in the direction you were already facing.</p>
+
+<center><img src="WebsiteImages/QuadrapedalCharacterController.gif" alt="QuadrapedalCharacterController.gif" id="MonsterCorridor"></center>
+<center><img src="WebsiteImages/Fox.png" alt="Fox." id="MonsterCorridor"></center>
+
+<p id="ProjectText">This project was interesting to work on because it was a new kind of challenge because instead of the projects I was more used to where you make a program to do something with quite a-bit of code, I was making something that wasn't that much code, but I had to make it the best quality I could.</p>
+
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="Stylesheet" href="index.css" type="text/css" />
+<title>OpenGL Graphics Engine</title>
+<meta charset="utf-8">
+
+</head>
+
+<body style="background-color: #FFFFFF;">
+
+<div id="PageTopDiv">
+<h1 id="PageHeading">OpenGL Graphics Engine</h1>
+<h2 id="LinkHeading"><a href="index.html" id="PageLink">Home</a></h1>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("PageHeading").style.fontSize = "30px";
+	
+	document.getElementById("LinkHeading").style.fontSize = "15px";
+	
+	document.getElementById("PageTopDiv").style.height = "100px";
+  } else {
+    document.getElementById("PageHeading").style.fontSize = "90px";
+	
+	document.getElementById("LinkHeading").style.fontSize = "45px";
+	
+	document.getElementById("PageTopDiv").style.height = "500px";
+  }
+}
+</script>
+
+</div>
+
+<div id="PageContent">
+
+<h1 id="ProjectsHeader">Projects</h1>
+
+<p id="ProjectAnchors"><a href="MetaBallProject.html" id="ProjectAnchors"> Metaballs_Multithreaded </a> | <a href="DarkAcropolisProject.html" id="ProjectAnchors"> Dark Acropolis </a> | <a href="RegimentProject.html" id="ProjectAnchors"> Regiment AI </a> | <a href="QCCProject.html" id="ProjectAnchors"> Quadrapedal Character Controller </a> | <a href="OpenGLGraphicsProject.html" id="ProjectAnchors"> OpenGL Graphics Engine </a> | <a href="AOTProject.html" id="ProjectAnchors"> Attack on Titan TGTG </a></p>
+
+<h1 id="ProjectNameHeader">OpenGL Graphics Engine</h1>
+
+<p id="ProjectText">My goal for this project was to make a graphics engine using OpenGl. Originally this was a project that I was making for an assessment while
+studying at AIE with the goal of rendering a 3D object, but after graduating AIE I continued to improve it so I could use it for possible future projects.
+</p>
+
+<p id="ProjectText">My graphics engine can render multiple 3D objects and 2D Shapes and has different functions for static shapes and dynamic shapes. I have made a very 
+simple shader for the 2D shapes and made a shader for 3D objects that uses phong lighting.
+</p>
+
+<center><img src="WebsiteImages/GPU_Graphics_Screenrecord.gif" alt="Graphics Gif" id="MonsterCorridor"></center>
+
+<center><img src="WebsiteImages/Demo Image 1.png" alt="Graphics Image" id="MonsterCorridor"></center>
+
+<p id="ProjectText">One of the main difficulties working on this project was dealing with all the macros that I had to use for OpenGL, I got around this with ample and efficient commentation to ensure I understood every line and keep everything readable.
+</p>
+
+
+</div>
+
+</body>
+
+</html>
