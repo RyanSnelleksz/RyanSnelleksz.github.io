@@ -92,3 +92,6 @@ a:hover {
 	Width: 25%;
 	transition: transform .2s;
 }
+#MinionImage:Hover {
+	transform: scale(1.1);
+}
