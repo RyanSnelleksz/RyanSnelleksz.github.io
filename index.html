@@ -44,179 +44,62 @@ function scrollFunction() {
 
 <p id="ProjectAnchors"><a href="MetaBallProject.html" id="ProjectAnchors"> Metaballs_Multithreaded </a> | <a href="DarkAcropolisProject.html" id="ProjectAnchors"> Dark Acropolis </a> | <a href="RegimentProject.html" id="ProjectAnchors"> Regiment AI </a> | <a href="QCCProject.html" id="ProjectAnchors"> Quadrapedal Character Controller </a> | <a href="OpenGLGraphicsProject.html" id="ProjectAnchors"> OpenGL Graphics Engine </a> | <a href="AOTProject.html" id="ProjectAnchors"> Attack on Titan TGTG </a></p>
 
-<h1 id="ProjectNameHeader">Metaballs - Multithreaded</h1>
+<h1 id="ProjectsHeader">Dante's Roulette</h1>
 
-<center><video width="640" height="480" controls>
-  <source src="WebsiteImages/MetaballsVid.mp4" type="video/mp4" />
-Your browser does not support the video tag for Metaballs demo video.
-</video></center>
+<p id="ProjectText">Dante's Roulette is a game made in Unreal 5 and plays as a rogue-like first-person shooter game where the player must traverse the layers of Hell, while collecting various items like 'Relics' that will provide various effects and 'Imprints' which the player can use
+to create various custom bullets in which they can load into their trusty revolver 'Virgil'.</p>
 
-<p id="ProjectText">This a c++ metaballs project I made using my openGL graphics engine. I made it as a part of a 2D water sim, 
-which will be rendered using metaballs. I very much enjoyed this project as I learned a-lot in my research for my implementation of metaballs, 
-marching squares and multi-threading.</p>
+<p id="ProjectText">The game also features inspiration from the deadly game, 'Russian Roulette' with lots of randomness built into the game to force player to adapt and encourage unique builds. Additionally, the player will be confronted with situations where they need to weigh the odds.</p>
 
-<p id="ProjectText">For my implementation of meta balls, as mentioned, I had to implement a marching square algorithim.
-In my implementation, I made a class dedicated to making a grid, holding it's data and running the marching square algorithim.
-When an instance of the marching square class was made, it was instantiated using given parameters to make a series of grid points forming it's rows and columns, and then a proportionate series of cells would be made using those grid points as their corners.
- The march function would then use those to detect which cells had points in the contour of the metashape and then use those to form a list of triangle corner positions to be drawn using the GL_TRIANGLES primitive in the graphics engine.</p>
+<p id="ProjectText">One of the main features of the game is the ability to use 'Imprints' which are components with unique effects that the player uses to make custom bullet presets. Each bullet can have many effects as the player owns and each effect can be made stronger than others as long as it is within a certain budget. 
+Additionally, the players revolver must be loaded bullet-by-bullet, which does allow the player to order their custom bullets fire order.</p>
 
-<p id="ProjectText">Optimizing my implementation was fun and I found myself making numerous improvements. I believe my best improvements came from limiting how many times the march function looped through the cells, eventually getting it to one loop. After optimizing my implementation, I sought to gain experience multi-threading since this project was a perfect opportunity. In my research, I learned a-lot about concurrency and parallelism, and although I didn't find the need for mutexs/lock guards, 
- atomic variables and condition variables, I did get to use futures and promises in my implementation.</p>
+<center><img src="WebsiteImages/TheMinion.jpg" alt="Game's Minion Enemy" id="MinionImage"></center>
+<center><p>This is the game's minion enemies finalized concept image by Ethan Snelleksz</p></center>
 
+<h2 id="ProjectNameHeader">Team and Workflow</h2>
 
-<h1 id="ProjectNameHeader">Dark Acropolis</h1>
+<p id="ProjectText">My team for this project consists of 3 people, with myself as the programmer and two artists, Jake Morgan and Ethan Snelleksz, with each of us sharing design responisbilities. The way structured development was to progress in clear stages: Design, Pre-Alpha, Alpha, Beta and Gold.</p>
 
-<center><video width="640" height="480" controls>
-  <source src="WebsiteImages/WitchHDRPClip.mp4" type="video/mp4" />
-Your browser does not support the video tag for Dark Acropolis demo video.
-</video></center>
+<p id="ProjectText">During the Design stage we worked together to concept and design the game. Once we had prepared our GDD, TDD and art bible we worked together on concepting characters, mechanics and other assets. Usually this followed the process of mapping out ideas and needs,
+ each of us providing thumbnail designs, some debate, a new set of full designs from each of us and then an agreed final design which one of the artists would do final render of.</p>
+ 
+ <p id="ProjectText">When designing my implementation of the mechanics we decided on and systems we would need I would begin with researching relevant systems, relevant industry standards/common industry methods. Then I would usually draft it in a notebook, comparing my ideas for different implementations and then I would implement and test it.</p>
 
-<p id="ProjectText">Dark Acropolis is a first person thriller game where you must explore a castle whilst evading a monster. In order to win you have to find and destroy all the 'seals'
-so that you can destroy the monsters heart which is also hidden in the castle. It is important to stay hidden but if you are discovered, you are equipped with a magic gauntlet
-which you can use to flash and blind the monster temporarily, to get away. However, you have limited charges to your gauntlet and need to break seals to get more.</p>
+ <p id="ProjectText">Pre-Alpha started around the end of the Design stage, here we started blocking out the game's systems and assets.</p>
+ 
+ <p id="ProjectText">We are nearly out of Alpha at the time of writing this and in this stage we are aiming to have all of our functional assets and systems(at a minmimum level) in excluding animations and VFX, with a functional game loop.</p>
 
-<p id="ProjectText">This game was made in Unity and I worked on it with a team consisting of 3 designers, 4 artists and two programmers, including myself.</p>
+ <p id="ProjectText">In Beta we plan on having all our systems and assets finished and in Gold we will be polishing things like animation/vfx and making sure the roster of relics and imprints is plentiful.</p>
 
-<center><img src="WebsiteImages/WitchHDRPPeek.gif" alt="Monster Looking gif" id="MonsterCorridor"></center>
+<h2 id="MediumHeader">Development and Systems</h2>
 
-<center><img src="WebsiteImages/CorridorMonster.png" alt="Monster in corridor." id="MonsterCorridor"></center>
+ <p id="ProjectText"><b>My Goal:</b> Although going into this project I have many goals, when it came to developing my systems, I wanted it to be more challenging than what I thought the scope of the project was going to provide, so I put a-few goals in mind for development.</p>
 
-<p id="ProjectText">I was the lead programmer on the team and so my role, other documentation, consisted of designing and implementing the AI which was our major feature and some gameplay elements.</p>
+ <p id="ProjectText"><b>Unreal 5 and GAS:</b> My first goal was to learn as much as I can about <b>Unreal 5</b> and making robust systems with it's tools. Although I was already fairly comfortable in Unreal, I wanted to get more inimate knowledge with its tools which is why I decided we would be using the <b>(GAS)Gameplay Ability System</b> instead of making my own system for
+  our effects and abilities and I decided we would be using <b>Unreal's behaviour trees</b>.</p>
+ <p id="ProjectText">Although these systems may be over kill for the scope of this game, I wanted to take the opportunity to become experienced with them as they are used in industry and it was in line with my second goal.</p>
 
-<p id="ProjectText">I specifically worked on all the AI and monster related stuff(including the animation controller but excluding sound), the gauntlet(animation and gems) and some 
-other gameplay stuff.<br>
-My programming partner did the audio and UI programming and the character controller.</p>
+<p id="ProjectText"><b>Scalability:</b> My second goal was to make my systems as robust and scalable as possible. I wanted to focus on making systems with large potential for growth especially because we do have plans for making the game bigger if the opportunity arises and I would be able to use them in future Unreal Projects which I'll definentley do with my UI systems.</p>
 
-<p id="ProjectText">The AI I chose to implement for the monster, was a AI directly inspired by Alien Isolation, where there is a monster AI and a director AI. The premise is that the
-monster has no advantage over the player, information wise, and the director AI has information on both the monster and the player. The director AI then works to make the game interesting by applying pressure
-on the player by giving the monster a hint if it is struggling to find the player but also be fair by releasing the pressure when the player has seemingly been in long high stress scenarios.</p>
+<h2 id="MediumHeader">Some Notable System Features</h2>
 
-<p id="ProjectText">The way I've implemented this is by having the director measure the players stress based of player proximity to the monster and whether or not the player has seen the
-monster. This measure is called the 'menace gauge' in Alien Isolation which I also adopted.<br>
-If the conditions for our 'menace gauge' are not met, then the 'menace gauge' decreases and when it gets too low, the director will give the monster a vague clue as to where the player might be. In our 
-system, the map is seperated as areas and the areas are cut up as rooms. A vague clue in our case is the director will tell the monster which area to search.<br>
-If the conditions are met however, the 'menace gauge' will increase and when it gets too high, the monster will recieve no clues for a while and will have to find the player with no information whatsoever.
-</p>
+<h3 id="SmallHeader">Characters and Items</h3>
 
-<p id="ProjectText">I created 3 main scripts for this duo AI. The directior AI, the Monsters script for Line of sight/animations/sounds/etc for the monster, and a decision making script for the monster.<br>
-The director AI ended up being easier to implement than I had initially expected and the monster script did take quite a-bit of work, especially when trying to make 
-line of sight work favourbly for the monster but also feel natural to the player. The monster's decision making script was the hardest out of the 3 to make and the biggest challenge was to make the monster able to attempt to track the player when he lost them in a chase properly and without omniscience. Pretty much acting purely on line of sight and 'what it knew' such as the last room the monster saw the player in.<br>
-It didn't have to be very accurate but it needed to be reliable, intelligent and seem fair to the player.
-</p>
+<p id="ProjectText">When designing my systems for characters and spawning enemies I had read about how God of War had made their game very data driven and it had inspired me to do the same. So the way our game handles characters and items is we have a base class for characters and items and then will build it based on data inputed to it, so this way we have one character class that could be many different characters and
+  can be made to vary in different ways without needing to make and implement/make new character assets.</p>
+<p id="ProjectText">This inspiration was also present when I was implementing GAS into the player, npc's and items as I became keen of the idea of making sure abilities and items could be shared between the player and npc's which would allow us to have features like enemies who have an item drop benefitting from said item which would really spice up gameplay and item acquisition.</p>
+<p id="ProjectText">In addition to GAS, our enemies also made use if Unreal's behaviour trees which I have also implemented it with GAS.</p>
 
-<p id="ProjectText">In order to solve this I did some theorising in my note book and had two initial ideas. 
-My first idea was to have the monster guess off the adjacent rooms to the room the player or monster(depends on who and who isn't in a room as per how the monster last saw them) were last in. This sounded good but I knew that it would cause a-lot code for covering specific situations according to the monster and players positioning.<br>
-My second idea was to guess the room that was closest to the monster by navmesh path length(excluding the monsters last room), however I knew that this solution was very simple and when theorising in my notes I foresaw that there could be issues with this.
-</p>
+<h3 id="SmallHeader">User Interface</h3>
 
-<p id="Regiment AI Anchor"></p>
+<p id="ProjectText">I am also quite proud of how I have implemented our UI system. After quite a-bit of research in how UI is done in industry, I opt'ed to implement a system that utilizes a Primary Layout in which it is a stack of layers for different levels of UI in which menus can be added and removed. There is the a Game Layer, a Game Menu Layer, a Menu Layer and a Modal Layer.
+Additionally, I implemented a Blueprint Function Library which other Blueprints in the game could use to request the addition and close of certain UI elements so that nothing would require a reference to individual menus. This also had the added benefit of that the BPFL would manage input and menu conflicts without non UI blueprints needing to get involved.</p>
 
-<p id="ProjectText">From here I decided to implement the easier solution and if that wasn't good enough I can try the other and if it was good, I could improve it later.
-I went through both solutions and both seemed to be about as good as the other with the first idea still needing some improvements.
-So I went with a third idea of guessing the closest adjacent room to the last room that didn't backtrack through the last room, but when testing the idea in my notes
-I found that the rooms that made the monster need to turn the least was often the best guess that would make the monster either guess the right room or move past 
-the players hiding spot which would increase tension, and simply make least optimal choices less often.</p>
+<h3 id="SmallHeader">Player Weapon</h3>
 
-<p id="ProjectText">So I ended up with a solution where the monster would take a guess from the rooms whose paths too started in front of the monster from a smaller field of view.
-Later in the project this evolved to a smaller fov which would grow everytime the previous fov didn't produce good results.</p>
+<p id="ProjectText">Implementing the systems for the player weapon was quite simple and the main features for it is the Weapon Handler Component which manages the players guns(we only have one weapon but it's build so adding more would be easy), bullets and Imprints.</p>
 
-<p id="ProjectAnchors"><a href="#Dark Acropolis Anchor" id="ProjectAnchors"> Back To Top </a></p>
-
-<h1 id="ProjectNameHeader">Regiment AI</h1>
-
-<p id="ProjectText">The goal of this project was to make a library project in which someone could feed relevant information to the 'War Manager' and it would feed new positions for soldier units
-back.<br>
-This was made using my own physics engine and a Line Renderer I was given during an old project. I did not make the line renderer and I used the glm and
-GLFW libraries as well but the rest is my own. Imgui is also present but it was not used.</p>
-
-<p id="ProjectText">This was made by implementing Dikstra pathfinding and a grid based node map. The way the AI works is that you set it up by creating 'Clone Armies' that have
-'Clones'. This represent the data of the armies and units inside the armies of the program that is using the library.
-It also has a war manager which essentially is a black board with some additional function.</p>
-
-<p id="ProjectText">The armies also have stances in which they can take. These include, Hold, Attack, Move and Flee.</p>
-
-<p id="ProjectText">When holding armies will stay still, however if another enemy army is in range and in line of sight, they will turn to face that army.
-If set to attack, the army will pursue any army they can see.<br>
-If set to move, the army will move to whatever location they where told to move to and then will hold.<br>
-Armies who have lost too many units will take the flee stance and will break formation, and each unit will run directly away from the enemy army.</p>
-
-<p id="ProjectText">The army clone AI will provide positions for the soldiers by calculating using the current amount of soldiers remaining and the set values for spacing and the soldiers then seek out those positions.</p>
-
-<p id="QCC Anchor"></p>
-
-<center><video width="640" height="480" controls>
-  <source src="WebsiteImages/ArmySimulation.mp4" type="video/mp4" />
-Your browser does not support the video tag for Army Simulation demo video.
-</video></center>
-
-<p id="ProjectAnchors"><a href="#Dark Acropolis Anchor" id="ProjectAnchors"> Back To Top </a></p>
-
-<h1 id="ProjectNameHeader">Quadrupedal Character Controller</h1>
-
-<p id="ProjectText">My goal for this project was to make a quadrupedal character controller that felt good and looked realistic. Since I was making a quardrapedal CC
-I decided to do it in Unity so I could do it easily in 3D.
-</p>
-
-<p id="ProjectText">When initially tackling this project I sought to make it so that the player controller moved the front of the body, and the back of the body would follow.
-This worked well at the start but when trying to apply it to a character model, I found that my setup didn't really work and so I decided to take what I learned and
-try again from a different approach.</p>
-
-<p id="ProjectText">
-I started by laying the ground work like basic movement and I made so to start development on a character model already. I then tried to make the movement mimic the movement of a quadraped more and looked at some videos of horses and dogs for reference.<br>
-Eventually I got it feeling good but then I needed to make it look good. Eventually after getting some third opinions I landed on using animation masks to cut up animations. By doing this I made it so the user could stop mid turn and stay turned. Walking forward would then straighten out the character and while moving you a little in the direction you were already facing.</p>
-
-<center><img src="WebsiteImages/QuadrapedalCharacterController.gif" alt="QuadrapedalCharacterController.gif" id="MonsterCorridor"></center>
-<center><img src="WebsiteImages/Fox.png" alt="Fox." id="MonsterCorridor"></center>
-
-<p id="OpenGL Graphics Anchor"></p>
-
-<p id="ProjectText">This project was interesting to work on because it was a new kind of challenge because instead of the projects I was more used to where you make a program to do something with quite a-bit of code, I was making something that wasn't that much code, but I had to make it the best quality I could.</p>
-
-<p id="ProjectAnchors"><a href="#Dark Acropolis Anchor" id="ProjectAnchors"> Back To Top </a></p>
-
-<h1 id="ProjectNameHeader">OpenGL Graphics Engine</h1>
-
-<p id="ProjectText">My goal for this project was to make a graphics engine using OpenGl. Originally this was a project that I was making for an assessment while
-studying at AIE with the goal of rendering a 3D object, but after graduating AIE I continued to improve it so I could use it for possible future projects.
-</p>
-
-<p id="ProjectText">My graphics engine can render multiple 3D objects and 2D Shapes and has different functions for static shapes and dynamic shapes. I have made a very 
-simple shader for the 2D shapes and made a shader for 3D objects that uses phong lighting.
-</p>
-
-<center><img src="WebsiteImages/GPU_Graphics_Screenrecord.gif" alt="Graphics Gif" id="MonsterCorridor"></center>
-
-<center><img src="WebsiteImages/Demo Image 1.png" alt="Graphics Image" id="MonsterCorridor"></center>
-
-<p id="AOTTGTG Anchor"></p>
-
-<p id="ProjectText">One of the main difficulties working on this project was dealing with all the macros that I had to use for OpenGL, I got around this with ample and efficient commentation to ensure I understood every line and keep everything readable.
-</p>
-
-<p id="ProjectAnchors"><a href="#Dark Acropolis Anchor" id="ProjectAnchors"> Back To Top </a></p>
-
-<h1 id="ProjectNameHeader">Attack on Titan TGTG</h1>
-
-<p id="ProjectText">This project is a 'Tribute Game' for the Attack on Titan Tribute Game and is made with it as inspiration. My goal was to simulate the ODM(Omni-Directional Movement)Gear from the anime Attack on Titan similarly to the AOTTG.
-Although this was inspired by the AOTG I have strayed from some of the design choices in my own direction.
-
-</p>
-
-<p id="ProjectText">To implement the ODM gear, inside my ODMLogic script I made use of Unity's spring components, using functions and fine-tuning the settings to make them imitate ODM Gear.
-I found that this project was similar to my Quadrapedal Character Controller that was a smaller project that I needed to fine tune produce the right result.
-An example of this tuning is how I implemented Unity's physic's material to control the friction of the player so that flying around and through obstacles didn't feel 'sticky' but when sliding on the floor didn't feel frictionless.
-I used a state machine inside a player movement script to implement and control sliding, swinging, walking and the gas mechanic which can be used for extra propulsion.
-
-</p>
-
-<center><img src="WebsiteImages/AttackOnTitanTGTG.gif" alt="AttackOnTitanTGTG.gif" id="MonsterCorridor"></center>
-
-<center><img src="WebsiteImages/AOTTGTG_Image1.png" alt="AOTTGTG Image" id="MonsterCorridor"></center>
-
-<p id="ProjectText">Currently the game only has the movement mechanics and a low quality model I made, however in the future I plan to add some animation, a better map and titans(enemies) with the attack mechanics.
-</p>
-
-<p id="ProjectAnchors"><a href="#Dark Acropolis Anchor" id="ProjectAnchors"> Back To Top </a></p>
 
 </div>
 
