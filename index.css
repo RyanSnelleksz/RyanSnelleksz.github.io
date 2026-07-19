@@ -88,7 +88,7 @@ a:hover {
 }
 
 #MinionImage {
-	Height: 25%;
+	Height: 15%;
 	Width: 25%;
 	transition: transform .2s;
 }
