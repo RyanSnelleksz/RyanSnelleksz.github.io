@@ -1,5 +1,5 @@
 
-IMPORTANT: I cannot upload the build of this project to github because I am using a free account, however I have provided a link below to a google drive file
+IMPORTANT: I cannot upload the build of this project to github because I am using a free account and the file size it to big for one push, however I have provided a link below to a google drive file
 which is a build for you to check out.
 
 Build: https://drive.google.com/file/d/1uTpzeIMxuYJ6Y1wJynWIsWKZr_ZBC6O7/view?usp=sharing

@@ -82,7 +82,7 @@ Additionally, the players revolver must be loaded bullet-by-bullet, which does a
 
 <p id="ProjectText"><b>Scalability:</b> My second goal was to make my systems as robust and scalable as possible. I wanted to focus on making systems with large potential for growth especially because we do have plans for making the game bigger if the opportunity arises and I would be able to use them in future Unreal Projects which I'll definentley do with my UI systems.</p>
 
-<h2 id="MediumHeader">Some Notable System Features</h2>
+<h2 id="MediumHeader">Some Notable Systems and Game Features</h2>
 
 <h3 id="SmallHeader">Characters and Items</h3>
 
@@ -96,10 +96,13 @@ Additionally, the players revolver must be loaded bullet-by-bullet, which does a
 <p id="ProjectText">I am also quite proud of how I have implemented our UI system. After quite a-bit of research in how UI is done in industry, I opt'ed to implement a system that utilizes a Primary Layout in which it is a stack of layers for different levels of UI in which menus can be added and removed. There is the a Game Layer, a Game Menu Layer, a Menu Layer and a Modal Layer.
 Additionally, I implemented a Blueprint Function Library which other Blueprints in the game could use to request the addition and close of certain UI elements so that nothing would require a reference to individual menus. This also had the added benefit of that the BPFL would manage input and menu conflicts without non UI blueprints needing to get involved.</p>
 
-<h3 id="SmallHeader">Player Weapon</h3>
+<h3 id="SmallHeader">Bullets and 'Imprints'</h3>
 
-<p id="ProjectText">Implementing the systems for the player weapon was quite simple and the main features for it is the Weapon Handler Component which manages the players guns(we only have one weapon but it's build so adding more would be easy), bullets and Imprints.</p>
+<p id="ProjectText">Just to quickly rehash bullets and imprints: Our game gives the player a revolver in which they can load custom bullets into. Custom bullets are made using special effects collected which we have dubbed 'imprints' and the player can load these individually into their revolver.</p>
 
+<p id="ProjectText">When the player customizes bullets, the have a budget of points in which they can allocate into each special effect they have collected, so the player could puts points into an explosion effect + and fire effect and have themselves a molotov-like bullet. Currently, the player's points per bullet actually scales with how many imprints they have accumulated, since relics(items) and imprints(effects) both drop from the lootpool, this alleviates the player feeling cheated out of a drop if they recieve an imprint they dont have any intention of using(like if they were doing a fire build and got a cold imprint) but allows them to hold onto different effects and provide a unique way of scaling.</p>
+
+<p id="ProjectText">So far this feature itself has been fairly easy to implement with it's main challenges steming from how many different features it touches(GAS, Gun mechanics, UI Requirements, Items) but I have managed this by trying to follow single-responsibility principle and using Blueprint Function Libraries.</p>
 
 </div>
 
